@@ -8,10 +8,13 @@
     <body>
         <div ng-app="myApp">
            <form>
-               <input type="radio" ng-model="animal" value="dog">Dog<BR>
-               <input type="radio" ng-model="animal" value="cat">Cat<BR>
-               <input type="radio" ng-model="animal" value="fish">Fish<BR>
-               <input type="radio" ng-model="animal" value="ant">Ant<BR> 
+               <select ng-model="animal">
+                   <option value=""></option>
+                   <option value="dog">Dog</option>
+                   <option value="cat">Cat</option>
+                   <option value="fish">Fish</option>
+                   <option value="ant">Ant</option>
+               </select>
            </form>
 
                 <div ng-switch="animal">
